@@ -1,0 +1,109 @@
+:root {
+    --scale: 1px;
+    --window-height: calc(322 * var(--scale));
+    --window-width: calc(232 * var(--scale));
+    --calculator-border-radius: 10px;
+}
+
+.macos-top-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 25px;
+    top: 13px;
+}
+
+.macos-button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #E0E0E0;
+    margin-right: 5px;
+}
+
+.close-button {
+    background-color: #FF5F57;
+}
+
+.minimize-button {
+    background-color: #FEBC2F;
+}
+
+.fullscreen-button {
+    background-color: #29C840;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: rgb(31, 211, 181);
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+    position: relative;
+}
+
+table {
+    table-layout: fixed;
+    width: 2049px;
+    margin-top: -8px;
+    margin-left: -8px;
+    height: 938px;
+}
+
+
+/* tr {
+    width: var(--window-width) ;
+} */
+
+td {
+    height: calc(var(--window-height) / 7);
+    background-color: #031a68be;
+    text-align: center;
+    border: calc(var(--scale) * 0.5) solid #29043f;
+    color: white !important;
+    border-radius: 55px;
+    font-size: calc(52 * var(--scale));
+    width: 10px !important;
+}
+
+td:hover {
+    background-color: #A89DB2;
+}
+
+tr:nth-child(2) td {
+    background-color: #30116b !important;
+}
+
+tr:nth-child(2) td:hover {
+    background-color: #2d0b4b !important;
+}
+
+tr td:last-child {
+    background-color: rgb(10, 122, 29) !important;
+}
+
+tr td:last-child:hover {
+    background-color: #64400b !important;
+}
+
+#display {
+    height: calc(var(--window-height) * 7 / 28 - 2px) !important;
+    text-align: right;
+    background-color: #137433 !important;
+    padding-right: 20px;
+    font-size: calc(56 * var(--scale));
+    font-weight: 100;
+    vertical-align: bottom;
+    border-radius: 22px;
+}
+
+tr:last-child td {
+    /* background-color: red!important; */
+    height: calc(var(--window-height) / 7 + 2px) !important;
+}
