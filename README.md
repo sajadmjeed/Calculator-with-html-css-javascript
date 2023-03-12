@@ -1,9 +1,2 @@
-# macos-calculator
-https://youtu.be/wgBC-CUQEGs
-
-For electron.js (desktop app):
-npm install
-npm start
-
-For browser:
-Open index.html
+ https://t.me/exit_2s Contact me on telegram
+ 
